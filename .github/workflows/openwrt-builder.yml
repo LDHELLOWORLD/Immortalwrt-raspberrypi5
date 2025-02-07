@@ -31,7 +31,7 @@ env:
   TZ: Asia/Shanghai
   
   # 设置要下载的版本号
-  OPENWRT_VERSION: openwrt-24.10.0
+  OPENWRT_VERSION: v24.10.0
   OPENWRT_TGZ_URL: https://github.com/openwrt/openwrt/archive/refs/tags/v24.10.0.tar.gz
 
 jobs:

@@ -79,8 +79,10 @@ jobs:
       run: |
         df -hT $PWD
         wget $OPENWRT_TGZ_URL
+        ls
         tar -xzf ${OPENWRT_VERSION}.tar.gz
-        mv ${OPENWRT_VERSION} openwrt # rename extracted folder to openwrt for consistency
+        ls
+        mv openwrt-24.10.0 openwrt # rename extracted folder to openwrt for consistency
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
